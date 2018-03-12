@@ -37,6 +37,7 @@ vmware-iso|vmware-vmx)
 
     # for shared folder
     echo 'fuse_load="YES"' >>/boot/loader.conf;
+    mkdir /mnt/hgfs;
 
     # Don't waste 10 seconds waiting for boot
     echo 'autoboot_delay="-1"' >>/boot/loader.conf;
